@@ -386,6 +386,7 @@ Resources:
               ManagedRuleGroupStatement:
                 VendorName: AWS
                 Name: AWSManagedRulesCommonRuleSet
+                ExcludedRules: ['GenericRFI_BODY', 'CrossSiteScripting_BODY']
           - !Ref 'AWS::NoValue'
         - Name: !Sub '${ParentStackName}WhitelistRule'
           Priority: 1
